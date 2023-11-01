@@ -41,6 +41,7 @@ jobs:
       # Runs a set of commands to install dependencies in the runner environment
       - name: Install dependencies
         run: |
+          cd app
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
      
