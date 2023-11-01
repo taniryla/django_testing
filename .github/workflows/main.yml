@@ -47,7 +47,9 @@ jobs:
      
       # Runs database migrations on the Django app
       - name: Run migrations
-        run: python manage.py migrate
+        run: |
+        cd app
+        python manage.py migrate
       
       # Run all tests with verbose flag
       - name: Run all tests
